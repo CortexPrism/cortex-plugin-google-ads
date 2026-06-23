@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-google-ads",
-  "version": "1.0.0",
-  "description": "Google Ads Campaign Manager — Create/optimize ad groups, adjust bids, generate ad variants, analyze performance",
+  "version": "1.0.1",
+  "description": "Google Ads Campaign Manager \u2014 Create/optimize ad groups, adjust bids, generate ad variants, analyze performance",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,10 +9,21 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-google-ads",
   "homepage": "https://cortexprism.io/marketplace/plugins/google-ads",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "ads_create_campaign", "description": "Create ad campaign", "params": [] },
-    { "name": "ads_optimize_bids", "description": "Optimize bid strategy", "params": [] },
+    {
+      "name": "ads_create_campaign",
+      "description": "Create ad campaign",
+      "params": []
+    },
+    {
+      "name": "ads_optimize_bids",
+      "description": "Optimize bid strategy",
+      "params": []
+    },
     {
       "name": "ads_generate_creative",
       "description": "Generate ad creative variants",
@@ -25,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
